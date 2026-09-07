@@ -64,7 +64,7 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date("2026-09-18T20:00:00").getTime();
+    const targetDate = new Date("2026-09-18T19:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -216,9 +216,12 @@ export default function Home() {
           <div className="text-2xl sm:text-3xl font-bold mb-10 text-[#4a4a4a]">الجمعة، ١٨ سبتمبر ٢٠٢٦</div>
           
           <div className="text-xl sm:text-2xl text-gray-600 mb-2 font-bold">فندق لي سيل - Le Ciel Hotel</div>
-          <div className={`text-lg sm:text-xl ${theme.accentText} mb-10 flex items-center justify-center gap-3 transition-colors duration-1000`}>
+          <div className={`text-lg sm:text-xl ${theme.accentText} mb-2 flex items-center justify-center gap-3 transition-colors duration-1000`}>
             <MapPin className={`${theme.secondaryText} w-7 h-7 transition-colors duration-1000`} />
             قاعة Le Ciel
+          </div>
+          <div className={`text-2xl font-bold ${theme.primaryText} mb-10 tracking-wider font-[family-name:var(--font-playfair)] transition-colors duration-1000`}>
+            7:00 PM
           </div>
 
           <motion.div whileHover={{ scale: 1.02 }} className="w-full h-[350px] sm:h-[450px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white mb-12 bg-gray-200">
