@@ -24,7 +24,7 @@ export default function Home() {
             <div className="font-[family-name:var(--font-playfair)] text-xl sm:text-2xl text-[#a98f5b] tracking-[4px] mb-6">Ayman & Naglaa</div>
 
             <div className="font-[family-name:var(--font-amiri)] text-[#5A6B50] text-lg sm:text-xl leading-relaxed mb-6 px-4 sm:px-10">
-              "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ"
+              &quot;وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ&quot;
             </div>
 
             <div className="w-[80px] h-[2px] bg-[#a98f5b] mx-auto mb-6"></div>
