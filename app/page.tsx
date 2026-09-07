@@ -178,7 +178,11 @@ export default function Home() {
                 عقد قران وحفل زفاف
               </motion.div>
 
-              <motion.h1 initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1 }} className="font-[family-name:var(--font-amiri)] text-6xl sm:text-8xl text-[#4a4a4a] mb-4 sm:mb-6 font-bold drop-shadow-md">محمد & قمر</motion.h1>
+              <motion.h1 initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1 }} className="font-[family-name:var(--font-amiri)] text-7xl sm:text-8xl text-[#4a4a4a] mb-4 sm:mb-6 font-bold drop-shadow-md leading-tight">
+                <span className="block sm:inline">محمد</span>
+                <span className={`block sm:inline text-5xl sm:text-7xl ${theme.primaryText} my-2 sm:my-0 sm:mx-6 font-[family-name:var(--font-playfair)]`}>&</span>
+                <span className="block sm:inline">قمر</span>
+              </motion.h1>
               <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.2 }} className={`font-[family-name:var(--font-playfair)] text-2xl sm:text-4xl ${theme.secondaryText} tracking-[6px] sm:tracking-[10px] uppercase font-bold transition-colors duration-1000 drop-shadow-sm`}>MOHAMED & KAMAR</motion.div>
             </div>
           </motion.div>
