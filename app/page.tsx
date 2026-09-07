@@ -114,7 +114,7 @@ export default function Home() {
 
   return (
     <main className={`min-h-screen flex flex-col items-center justify-start font-[family-name:var(--font-cairo)] relative overflow-x-hidden ${theme.bg} transition-colors duration-1000`}>
-      <audio ref={audioRef} loop src="/music.mp3" />
+      <audio ref={audioRef} loop src="/music.mpeg" />
 
       {/* Theme Switcher */}
       <div className="fixed top-4 left-4 z-[999] flex gap-2 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-lg items-center">
