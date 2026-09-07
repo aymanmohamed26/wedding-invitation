@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${amiri.variable} ${greatVibes.variable} ${playfair.variable} ${cairo.variable} bg-[#FAFAF5] overflow-hidden`}>
+      <body className={`${amiri.variable} ${greatVibes.variable} ${playfair.variable} ${cairo.variable} bg-[#FAFAF5]`}>
         {children}
       </body>
     </html>
