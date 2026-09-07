@@ -167,17 +167,19 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.95 }} 
             animate={isOpen ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }} 
             transition={{ delay: 0.5, duration: 1.5, ease: "easeOut" }}
-            className="relative w-full max-w-[600px] aspect-square flex flex-col items-center justify-center mt-12 mb-8"
+            className="relative w-full max-w-[600px] flex flex-col items-center justify-center mt-16 mb-16 py-20 px-4"
           >
-            <img src="/watercolor-floral-corner-frame.jpg" alt="Floral Frame" className="absolute inset-0 w-full h-full object-contain object-top mix-blend-multiply" />
+            {/* Glowing Aura Background (No Images!) */}
+            <div className={`absolute inset-0 rounded-full blur-[80px] opacity-40 ${theme.primaryBg} transition-colors duration-1000 scale-125`}></div>
+            <div className={`absolute inset-0 rounded-full blur-[60px] opacity-30 ${theme.secondaryBg} transition-colors duration-1000 scale-90 translate-y-10`}></div>
             
-            <div className="relative z-10 flex flex-col items-center justify-center mt-[10%] sm:mt-[15%]">
-              <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 0.9 }} className={`font-[family-name:var(--font-cairo)] text-xl sm:text-3xl ${theme.primaryText} font-bold mb-4 sm:mb-6 transition-colors duration-1000`}>
+            <div className="relative z-10 flex flex-col items-center justify-center">
+              <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 0.9 }} className={`font-[family-name:var(--font-cairo)] text-2xl sm:text-4xl ${theme.primaryText} font-bold mb-6 sm:mb-8 transition-colors duration-1000 drop-shadow-sm`}>
                 عقد قران وحفل زفاف
               </motion.div>
 
-              <motion.h1 initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1 }} className="font-[family-name:var(--font-amiri)] text-5xl sm:text-7xl text-[#4a4a4a] mb-2 sm:mb-4 font-bold">محمد & قمر</motion.h1>
-              <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.2 }} className={`font-[family-name:var(--font-playfair)] text-xl sm:text-3xl ${theme.secondaryText} tracking-[4px] sm:tracking-[8px] uppercase font-bold transition-colors duration-1000`}>MOHAMED & KAMAR</motion.div>
+              <motion.h1 initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1 }} className="font-[family-name:var(--font-amiri)] text-6xl sm:text-8xl text-[#4a4a4a] mb-4 sm:mb-6 font-bold drop-shadow-md">محمد & قمر</motion.h1>
+              <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.2 }} className={`font-[family-name:var(--font-playfair)] text-2xl sm:text-4xl ${theme.secondaryText} tracking-[6px] sm:tracking-[10px] uppercase font-bold transition-colors duration-1000 drop-shadow-sm`}>MOHAMED & KAMAR</motion.div>
             </div>
           </motion.div>
           
