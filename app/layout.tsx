@@ -8,8 +8,8 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: '--font-playfa
 const cairo = Cairo({ subsets: ["arabic"], variable: '--font-cairo' });
 
 export const metadata: Metadata = {
-  title: "دعوة زفاف - أيمن ونجلاء",
-  description: "دعوة زفاف أيمن ونجلاء - الخميس، 1 أكتوبر 2026",
+  title: "دعوة زفاف - محمد وقمر",
+  description: "يسعدنا دعوتكم لحضور حفل زفافنا وعقد قراننا - الجمعة، ١٨ سبتمبر ٢٠٢٦",
 };
 
 export default function RootLayout({
