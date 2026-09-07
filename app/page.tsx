@@ -169,7 +169,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 1.5, ease: "easeOut" }}
             className="relative w-full max-w-[600px] aspect-square flex flex-col items-center justify-center mt-12 mb-8"
           >
-            <img src="/arch.jpeg" alt="Floral Arch" className="absolute inset-0 w-full h-full object-contain object-top mix-blend-multiply" />
+            <img src="/watercolor-floral-corner-frame.jpg" alt="Floral Frame" className="absolute inset-0 w-full h-full object-contain object-top mix-blend-multiply" />
             
             <div className="relative z-10 flex flex-col items-center justify-center mt-[10%] sm:mt-[15%]">
               <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 0.9 }} className={`font-[family-name:var(--font-cairo)] text-xl sm:text-3xl ${theme.primaryText} font-bold mb-4 sm:mb-6 transition-colors duration-1000`}>
