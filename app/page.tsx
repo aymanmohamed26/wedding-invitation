@@ -119,8 +119,13 @@ export default function Home() {
           </div>
           
           {/* Quranic Verse at the top */}
-          <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 0.9 }} className={`font-[family-name:var(--font-amiri)] ${theme.accentText} text-3xl sm:text-4xl leading-relaxed mt-8 mb-8 px-4 sm:px-10 z-10 max-w-2xl font-bold text-center relative`}>
-            «وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً»
+          <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 0.9 }} className="flex flex-col items-center mt-8 mb-8 z-10 relative">
+            <h2 className={`font-[family-name:var(--font-amiri)] ${theme.primaryText} text-4xl sm:text-5xl mb-6 font-bold text-center drop-shadow-sm`}>
+              بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
+            </h2>
+            <div className={`font-[family-name:var(--font-amiri)] ${theme.accentText} text-3xl sm:text-4xl leading-relaxed px-4 sm:px-10 max-w-2xl font-bold text-center`}>
+              «وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً»
+            </div>
           </motion.div>
           
           <motion.div initial={{ width: 0 }} animate={isOpen ? { width: 150 } : { width: 0 }} transition={{ delay: 1.1, duration: 1 }} className={`h-[3px] ${theme.primaryBg} mx-auto mb-12 z-10 relative`}></motion.div>
@@ -133,7 +138,7 @@ export default function Home() {
               {/* First Family */}
               <div className="flex flex-col items-center justify-center gap-4">
                 <span className="text-4xl sm:text-5xl font-bold text-[#4a4a4a] font-[family-name:var(--font-amiri)]">عائلة فرحات</span>
-                <span className={`text-2xl sm:text-3xl ${theme.accentBg} text-white px-8 py-2 rounded-full font-bold shadow-md whitespace-nowrap`}>الحاج / وليد فرحات</span>
+                <span className={`text-2xl sm:text-3xl ${theme.accentBg} text-white px-8 py-2 rounded-full font-bold shadow-md whitespace-nowrap`}>وليد مجدي فرحات</span>
               </div>
 
               {/* Ampersand */}
