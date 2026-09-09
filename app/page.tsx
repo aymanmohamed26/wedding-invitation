@@ -138,7 +138,7 @@ export default function Home() {
               {/* First Family */}
               <div className="flex flex-col items-center justify-center gap-4">
                 <span className="text-4xl sm:text-5xl font-bold text-[#4a4a4a] font-[family-name:var(--font-amiri)]">عائلة فرحات</span>
-                <span className={`text-2xl sm:text-3xl ${theme.accentBg} text-white px-8 py-2 rounded-full font-bold shadow-md whitespace-nowrap`}>وليد مجدي فرحات</span>
+                <span className={`text-2xl sm:text-3xl ${theme.accentBg} text-white px-8 py-2 rounded-full font-bold shadow-md whitespace-nowrap`}>الحاج / وليد مجدي فرحات</span>
               </div>
 
               {/* Ampersand */}
