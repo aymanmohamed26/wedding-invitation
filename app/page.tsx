@@ -123,28 +123,13 @@ export default function Home() {
             «وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً»
           </motion.div>
           
-          <motion.div initial={{ width: 0 }} animate={isOpen ? { width: 150 } : { width: 0 }} transition={{ delay: 1.1, duration: 1 }} className={`h-[3px] ${theme.primaryBg} mx-auto mb-10 z-10 relative`}></motion.div>
-          
-          {/* Main Titles */}
-          <div className="relative z-10 flex flex-col items-center justify-center mb-12">
-            <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.3 }} className={`font-[family-name:var(--font-cairo)] text-2xl sm:text-4xl ${theme.primaryText} font-bold mb-6 sm:mb-8 drop-shadow-sm`}>
-              عقد قران وحفل زفاف
-            </motion.div>
+          <motion.div initial={{ width: 0 }} animate={isOpen ? { width: 150 } : { width: 0 }} transition={{ delay: 1.1, duration: 1 }} className={`h-[3px] ${theme.primaryBg} mx-auto mb-12 z-10 relative`}></motion.div>
 
-            <motion.h1 initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.5 }} className="font-[family-name:var(--font-amiri)] text-7xl sm:text-9xl text-[#4a4a4a] mb-4 sm:mb-6 font-bold drop-shadow-md">محمد & قمر</motion.h1>
+          {/* Families Section */}
+          <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.3 }} className="flex flex-col items-center text-center px-4 max-w-3xl z-10 w-full mb-10">
+            <p className={`text-2xl sm:text-3xl ${theme.accentText} mb-12 font-bold`}>بكل الحب والسرور، تتشرف</p>
             
-            <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.7 }} className={`font-[family-name:var(--font-playfair)] text-3xl sm:text-5xl ${theme.secondaryText} tracking-[6px] sm:tracking-[10px] uppercase font-bold drop-shadow-sm leading-tight mb-8`}>
-              <span className="block sm:inline">MOHAMED</span>
-              <span className="block sm:inline text-2xl sm:text-5xl sm:mx-4 my-2 sm:my-0">&</span>
-              <span className="block sm:inline">KAMAR</span>
-            </motion.div>
-          </div>
-
-          {/* Formal Invitation Text */}
-          <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.8 }} className="flex flex-col items-center text-center px-4 max-w-3xl z-10 w-full mb-10">
-            <p className={`text-2xl sm:text-3xl ${theme.accentText} mb-8 font-bold`}>بكل الحب والسرور، تتشرف</p>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-10 w-full mb-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-10 w-full mb-12">
               {/* First Family */}
               <div className="flex flex-col items-center justify-center gap-4">
                 <span className="text-4xl sm:text-5xl font-bold text-[#4a4a4a] font-[family-name:var(--font-amiri)]">عائلة فرحات</span>
@@ -161,10 +146,22 @@ export default function Home() {
               </div>
             </div>
             
-            <p className={`text-2xl sm:text-3xl ${theme.accentText} mb-8 font-bold`}>بدعوتكم لحضور حفل زفاف</p>
+            <p className={`text-2xl sm:text-3xl ${theme.accentText} mb-4 font-bold`}>بدعوتكم لحضور عقد قران وحفل زفاف</p>
+          </motion.div>
+          
+          {/* Main Titles (Big Names) */}
+          <div className="relative z-10 flex flex-col items-center justify-center mb-16">
+            <motion.h1 initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.5 }} className="font-[family-name:var(--font-amiri)] text-7xl sm:text-9xl text-[#4a4a4a] mb-4 sm:mb-6 font-bold drop-shadow-md">محمد & قمر</motion.h1>
             
-            <h2 className={`text-5xl sm:text-6xl ${theme.primaryText} mb-12 font-bold font-[family-name:var(--font-amiri)] drop-shadow-sm`}>✨ محمد & قمر ✨</h2>
-            
+            <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.7 }} className={`font-[family-name:var(--font-playfair)] text-3xl sm:text-5xl ${theme.secondaryText} tracking-[6px] sm:tracking-[10px] uppercase font-bold drop-shadow-sm leading-tight mb-8`}>
+              <span className="block sm:inline">MOHAMED</span>
+              <span className="block sm:inline text-2xl sm:text-5xl sm:mx-4 my-2 sm:my-0">&</span>
+              <span className="block sm:inline">KAMAR</span>
+            </motion.div>
+          </div>
+
+          {/* Rest of Formal Text */}
+          <motion.div initial="hidden" animate={isOpen ? "visible" : "hidden"} variants={fadeInUp} transition={{ delay: 1.9 }} className="flex flex-col items-center text-center px-4 max-w-3xl z-10 w-full mb-10">
             <p className={`text-2xl sm:text-3xl text-gray-700 mb-16 leading-relaxed max-w-2xl font-bold font-[family-name:var(--font-cairo)]`}>
               ليكتمل أنسنا ويسعدنا حضوركم لتشاركونا فرحتنا بهذه المناسبة السعيدة.
             </p>
